@@ -43,10 +43,10 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
         secureTextEntry
       />
       <View style={styles.button}>
-        <Button title="Login" onPress={handleLogin} color="#fff" />
+        <Button title="Login" onPress={handleLogin} color="#fff  !important" />
       </View>
       <View style={styles.button}>
-        <Button title="Cadastro" onPress={handleSignUp} color="#fff" />
+        <Button title="Cadastro" onPress={handleSignUp} color="#fff  !important" />
       </View>
     </View>
   );
