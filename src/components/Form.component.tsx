@@ -12,7 +12,7 @@ const FormScreen: React.FC<FormScreenProps> = ({ route }) => {
   const [name, setName] = useState<string>('');
   const [address, setAddress] = useState<string>('');
   const [email, setEmail] = useState<string>('');
-  const animalName = route.params?.animalName; // Obtém o ID do animal da rota
+  const animalName = route.params?.animalName;
 
   const handleSubmit = () => {
     Vibration.vibrate();
