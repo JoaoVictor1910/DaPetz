@@ -54,7 +54,7 @@ const SignUpScreen: React.FC<Props> = ({ navigation }) => {
         secureTextEntry
       />
       <View style={styles.button}>
-        <Button title="Cadastrar" onPress={handleSignUp} color="#fff" />
+        <Button title="Cadastrar" onPress={handleSignUp} color="#fff !important" />
       </View>
     </View>
   );

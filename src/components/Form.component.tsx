@@ -17,6 +17,7 @@ const FormScreen: React.FC<FormScreenProps> = ({ route }) => {
   const handleSubmit = () => {
     Vibration.vibrate();
     Alert.alert("Parabéns!", `Você entrou na fila de adoção para o animal: ${animalName}`);
+    alert(`Parabéns! Você entrou na fila de adoção para o animal: ${animalName}`)
   };
   const animalImage = animals.find((anm) => anm.name === animalName)?.imageUrl || require('../../assets/logo.png');
 
@@ -46,7 +47,7 @@ const FormScreen: React.FC<FormScreenProps> = ({ route }) => {
         onChangeText={setEmail}
       />
       <View style={styles.button}>
-        <Button title="Enviar" onPress={handleSubmit} color="#fff" />
+        <Button title="Enviar" onPress={handleSubmit} color="#fff  !important" />
       </View>
     </View>
   );
